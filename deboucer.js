@@ -3,7 +3,7 @@ console.log(input.innerHTML)
 
 let counter = 0;
 let getData = () => {
-   
+   console.log('fetching data', counter++)
 }
 let id;
 function debouncer(fn, delay) {
@@ -15,4 +15,4 @@ function debouncer(fn, delay) {
         },delay)
     }
 }
-let betterFunction = debouncer(getData, 2000);
+let betterFunction = debouncer(getData, 300);
